@@ -23,10 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-gray-700 ${roboto.className}`}>
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`bg-gray-700  ${roboto.className}`}>
+        <div className="min-h-[100vh]">
+          <Navbar />
+          <main className="">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
